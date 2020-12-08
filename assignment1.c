@@ -22,7 +22,7 @@ void main()
 
     // cal area of triangle
 
-    area_t = side1*side1/2;
+    area_t = side1*side2/2;
     
     // cal perimeter of rectangle
 
