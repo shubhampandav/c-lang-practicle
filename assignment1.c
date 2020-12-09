@@ -16,6 +16,7 @@ void main()
 
     printf("\nEnter the values of  side2 : ");
     scanf("%d",&side2);
+    
     printf("\nEnter the values of  side3 : ");
     scanf("%d",&side3);
 

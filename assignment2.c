@@ -1,37 +1,18 @@
-
- // WAP to check max amoung three number 
- // code by shubham pandav 
+//program to find  max of three numbers
+// date: 10-Dec-2020
+//Name: shubham pandav
 
 #include <stdio.h>
 
 void main()
 {
 
-    int a, b, c;
+    int A, B, C; //declare three variables
 
-    printf("Enter the values :");
-    scanf("%d%d%d", &a, &b, &c);
+    printf("Enter three values : ");
+    scanf("%d%d%d", &A, &B, &C); // taking user input
 
-    if (a >= b)
-    {
-        if (a >= c)
-        {
-            printf(" The Max of thre number is: %d", a);
-        }
-    }
-    else
-    {
-        if (a <= b)
-        {
-            if (b >= c)
-            {
-                printf("The Max of thre number is: %d", b);
-            }
-
-            else
-            {
-                printf("The Max of thre number is: %d", c);
-            }
-        }
-    }
+    // using ternary operator
+    int largest = A > B ? (A > C ? A : C) : (B > C ? B : C);
+    printf("\n The max of three number is : %d", largest);
 }
