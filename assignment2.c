@@ -7,12 +7,21 @@
 void main()
 {
 
-    int A, B, C; //declare three variables
+    float A, B, C; //declare three variables
 
     printf("Enter three values : ");
-    scanf("%d%d%d", &A, &B, &C); // taking user input
-
-    // using ternary operator
-    int largest = A > B ? (A > C ? A : C) : (B > C ? B : C);
-    printf("\n The max of three number is : %d", largest);
+    scanf("%f%f%f", &A, &B, &C); // taking user input
+   
+    if (A >= B && A >= C)
+    {
+        printf("max of three number: %f", A);
+    }
+    if (B >= A && B >= C)
+    {
+        printf("max of three number: %f", B);
+    }
+    if (C >= B && C >= A)
+    {
+        printf("max of three number: %f", C);
+    }
 }
