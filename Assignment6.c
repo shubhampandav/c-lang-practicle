@@ -4,17 +4,21 @@
 #include <stdio.h>
 void main()
 {
+     
     int number, rev = 0, remainder;
     printf("Enter an number: ");
     scanf("%d", &number);
     while (number != 0)
     {
         remainder = number % 10;
-        rev = rev * 10 + remainder;
+        rev = rev * 10 + remainder ;
+
         number/= 10;
     }
     printf("Reversed number = %d", rev);
 }
+
+
  // Algorithm 
  /**
  1. start
